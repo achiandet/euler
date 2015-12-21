@@ -1,0 +1,16 @@
+body {
+	font-family: Arial;
+}
+
+.wrapper {
+	width: 33.33%;
+	margin: 0 auto;
+}
+.problem:before {
+	content: "Problem:";
+	color: #999;
+}
+.answer:before {
+	content: "Answer:";
+	color: #999;
+}
