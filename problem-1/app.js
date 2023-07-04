@@ -3,3 +3,16 @@ If we list all the natural numbers below $10$ that are multiples of $3$ or $5$, 
 
 Find the sum of all the multiples of $3$ or $5$ below $1000$.
 */
+let collection = [];
+
+for (let i = 0; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+        collection.push(i);
+    }
+}
+
+let answer = collection.reduce((a, b)=>{
+    return a += b;
+})
+
+console.log(answer);
